@@ -9,6 +9,46 @@
 #include <algorithm>
 #include <cmath>
 
+inline bool useX(const Vector2D &v)
+{
+    return std::abs(v.x) >= std::abs(v.y);
+}
+
+inline double coordinate(
+    const Point2D &p,
+    bool useXCoordinate)
+{
+    return useXCoordinate ? p.x : p.y;
+}
+
+inline Point2D pointAtCoordinate(
+    const Point2D &A,
+    const Point2D &B,
+    double value,
+    bool useXCoordinate)
+{
+    if (useXCoordinate)
+    {
+        double t =
+            (value - A.x) /
+            (B.x - A.x);
+
+        return {
+            A.x + t * (B.x - A.x),
+            A.y + t * (B.y - A.y)};
+    }
+    else
+    {
+        double t =
+            (value - A.y) /
+            (B.y - A.y);
+
+        return {
+            A.x + t * (B.x - A.x),
+            A.y + t * (B.y - A.y)};
+    }
+}
+
 // 交集是一个点
 inline bool segmentIntersection(const Point2D &A, const Point2D &B, const Point2D &C, const Point2D &D, Point2D &intersection)
 {
@@ -122,10 +162,71 @@ inline IntersectionResult segmentIntersection(const Point2D &A, const Point2D &B
     // 情况 3：共线
     // ========================================================
 
-    // 这里暂时先处理成后面一步
+    bool xDirection = useX(r);
+
+    double a1 = coordinate(A, xDirection);
+    double a2 = coordinate(B, xDirection);
+
+    double c1 = coordinate(C, xDirection);
+    double c2 = coordinate(D, xDirection);
+
+    double minAB = std::min(a1, a2);
+    double maxAB = std::max(a1, a2);
+
+    double minCD = std::min(c1, c2);
+    double maxCD = std::max(c1, c2);
+
+    double overlapMin =
+        std::max(minAB, minCD);
+
+    double overlapMax =
+        std::min(maxAB, maxCD);
+
+    // 完全没有交集
+    if (overlapMin > overlapMax + eps)
+    {
+        return {
+            IntersectionType::None,
+            {},
+            {},
+            {}};
+    }
+
+    // 只有一个交点
+    if (std::abs(overlapMin - overlapMax) <= eps)
+    {
+        Point2D P =
+            pointAtCoordinate(
+                A,
+                B,
+                overlapMin,
+                xDirection);
+
+        return {
+            IntersectionType::Point,
+            P,
+            {},
+            {}};
+    }
+
+    // 有一段重叠
+    Point2D P1 =
+        pointAtCoordinate(
+            A,
+            B,
+            overlapMin,
+            xDirection);
+
+    Point2D P2 =
+        pointAtCoordinate(
+            A,
+            B,
+            overlapMax,
+            xDirection);
+
     return {
-        IntersectionType::None,
+        IntersectionType::Overlap,
         {},
-        {},
-        {}};
+        P1,
+        P2};
 }

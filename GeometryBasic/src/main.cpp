@@ -1,44 +1,29 @@
 #include <iostream>
+#include <vector>
 
-#include "geometry/SegmentIntersection.h"
-
-void printResult(const IntersectionResult &result)
-{
-    if (result.type == IntersectionType::None)
-    {
-        std::cout << "None\n";
-    }
-    else if (result.type == IntersectionType::Point)
-    {
-        std::cout << "Point: "
-                  << result.point.x << ", "
-                  << result.point.y
-                  << "\n";
-    }
-    else if (result.type == IntersectionType::Overlap)
-    {
-        std::cout << "Overlap: "
-                  << result.start.x << ", "
-                  << result.start.y
-                  << " -> "
-                  << result.end.x << ", "
-                  << result.end.y
-                  << "\n";
-    }
-}
+#include "geometry/ConvexHull.h"
 
 int main()
 {
-    Point2D A{0, 0};
-    Point2D B{10, 10};
+    std::vector<Point2D> points = {
+        {0, 0},
+        {4, 0},
+        {5, 2},
+        {3, 5},
+        {0, 4},
+        {2, 2},
+        {2, 1}};
 
-    Point2D C{0, 20};
-    Point2D D{10, 20};
+    std::vector<Point2D> hull = convexHull(points);
 
-    IntersectionResult result =
-        segmentIntersection(A, B, C, D);
+    std::cout << "Convex Hull:\n";
 
-    printResult(result);
+    for (const auto &p : hull)
+    {
+        std::cout << "("
+                  << p.x << ", "
+                  << p.y << ")\n";
+    }
 
     return 0;
 }
