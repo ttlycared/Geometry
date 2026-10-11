@@ -1,28 +1,32 @@
-#include <iostream>
-#include <vector>
 
-#include "geometry/ConvexHull.h"
+#include <iostream>
+#include <cmath>
+
+double orientation(
+    double ax, double ay,
+    double bx, double by,
+    double cx, double cy)
+{
+    return (bx - ax) * (cy - ay) - (by - ay) * (cx - ax);
+}
 
 int main()
 {
-    std::vector<Point2D> points = {
-        {0, 0},
-        {4, 0},
-        {5, 2},
-        {3, 5},
-        {0, 4},
-        {2, 2},
-        {2, 1}};
+    // A、B、C 的数学位置共线
+    double scales[] = {1.0, 1000.0, 1000000.0};
 
-    std::vector<Point2D> hull = convexHull(points);
-
-    std::cout << "Convex Hull:\n";
-
-    for (const auto &p : hull)
+    for (double s : scales)
     {
-        std::cout << "("
-                  << p.x << ", "
-                  << p.y << ")\n";
+        double cross = orientation(
+            0.0, 0.0,
+            1.0 * s, 1.0 * s,
+            2.0 * s, 2.0 * s);
+
+        std::cout << "scale = " << s
+                  << ", cross = " << cross
+                  << ", cross == 0: "
+                  << (cross == 0.0)
+                  << '\n';
     }
 
     return 0;

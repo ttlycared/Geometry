@@ -793,20 +793,15 @@ CMakeFiles/GeometryBasic.dir/src/main.cpp.o: /Users/ttlycared/code/Geometry/Geom
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
-  /Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Geometry2D.h \
-  /Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Point2D.h \
-  /Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/SegmentIntersection.h \
-  /Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/SegmentIntersectionResult.h \
-  /Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Vector2D.h
+  /Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Geometry3D.h \
+  /Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Point3D.h \
+  /Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/SegmentTriangleIntersection.h \
+  /Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Vector3D.h
 
 
-/Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Vector2D.h:
+/Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/SegmentTriangleIntersection.h:
 
-/Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/SegmentIntersectionResult.h:
-
-/Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Point2D.h:
-
-/Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Geometry2D.h:
+/Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Point3D.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h:
 
@@ -928,8 +923,6 @@ CMakeFiles/GeometryBasic.dir/src/main.cpp.o: /Users/ttlycared/code/Geometry/Geom
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wctype.h:
 
-/Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/SegmentIntersection.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wchar.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version:
@@ -967,6 +960,8 @@ CMakeFiles/GeometryBasic.dir/src/main.cpp.o: /Users/ttlycared/code/Geometry/Geom
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print:
+
+/Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Geometry3D.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:
 
@@ -2257,6 +2252,8 @@ CMakeFiles/GeometryBasic.dir/src/main.cpp.o: /Users/ttlycared/code/Geometry/Geom
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h:
+
+/Users/ttlycared/code/Geometry/GeometryBasic/src/geometry/Vector3D.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal_range.h:
 
