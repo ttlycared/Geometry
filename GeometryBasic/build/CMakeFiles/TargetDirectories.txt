@@ -1,3 +1,14 @@
 /Users/ttlycared/code/Geometry/GeometryBasic/build/CMakeFiles/GeometryBasic.dir
 /Users/ttlycared/code/Geometry/GeometryBasic/build/CMakeFiles/edit_cache.dir
 /Users/ttlycared/code/Geometry/GeometryBasic/build/CMakeFiles/rebuild_cache.dir
+/Users/ttlycared/code/Geometry/GeometryBasic/build/CMakeFiles/list_install_components.dir
+/Users/ttlycared/code/Geometry/GeometryBasic/build/CMakeFiles/install.dir
+/Users/ttlycared/code/Geometry/GeometryBasic/build/CMakeFiles/install/local.dir
+/Users/ttlycared/code/Geometry/GeometryBasic/build/CMakeFiles/install/strip.dir
+/Users/ttlycared/code/Geometry/GeometryBasic/build/Clipper2Build/CMakeFiles/Clipper2.dir
+/Users/ttlycared/code/Geometry/GeometryBasic/build/Clipper2Build/CMakeFiles/edit_cache.dir
+/Users/ttlycared/code/Geometry/GeometryBasic/build/Clipper2Build/CMakeFiles/rebuild_cache.dir
+/Users/ttlycared/code/Geometry/GeometryBasic/build/Clipper2Build/CMakeFiles/list_install_components.dir
+/Users/ttlycared/code/Geometry/GeometryBasic/build/Clipper2Build/CMakeFiles/install.dir
+/Users/ttlycared/code/Geometry/GeometryBasic/build/Clipper2Build/CMakeFiles/install/local.dir
+/Users/ttlycared/code/Geometry/GeometryBasic/build/Clipper2Build/CMakeFiles/install/strip.dir

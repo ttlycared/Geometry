@@ -7,16 +7,22 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/Users/ttlycared/code/Geometry/Clipper2/CPP/CMakeLists.txt"
+  "/Users/ttlycared/code/Geometry/Clipper2/CPP/Clipper2.pc.cmakein"
+  "/Users/ttlycared/code/Geometry/Clipper2/CPP/Clipper2Config.cmake.in"
+  "/Users/ttlycared/code/Geometry/Clipper2/CPP/clipper.version.in"
   "/Users/ttlycared/code/Geometry/GeometryBasic/CMakeLists.txt"
   "CMakeFiles/4.4.3/CMakeCCompiler.cmake"
   "CMakeFiles/4.4.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.3/CMakeSystem.cmake"
+  "/opt/homebrew/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake"
+  "/opt/homebrew/share/cmake/Modules/CMakePackageConfigHelpers.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/AppleClang-C.cmake"
@@ -24,6 +30,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake"
+  "/opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake"
@@ -41,6 +48,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake"
+  "/opt/homebrew/share/cmake/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -52,9 +60,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "/Users/ttlycared/code/Geometry/Clipper2/CPP/Clipper2Lib/include/clipper2/clipper.version.h"
+  "Clipper2Build/Clipper2.pc"
+  "Clipper2Build/Clipper2ConfigVersion.cmake"
+  "Clipper2Build/Clipper2Config.cmake"
+  "Clipper2Build/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/GeometryBasic.dir/DependInfo.cmake"
+  "Clipper2Build/CMakeFiles/Clipper2.dir/DependInfo.cmake"
   )

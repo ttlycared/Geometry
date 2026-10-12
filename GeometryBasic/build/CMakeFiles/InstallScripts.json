@@ -1,7 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/ttlycared/code/Geometry/GeometryBasic/build/cmake_install.cmake"
+		"/Users/ttlycared/code/Geometry/GeometryBasic/build/cmake_install.cmake",
+		"/Users/ttlycared/code/Geometry/GeometryBasic/build/Clipper2Build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
