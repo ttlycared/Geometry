@@ -187,29 +187,29 @@ Clipper2/fast:
 	$(MAKE) $(MAKESILENT) -f Clipper2Build/CMakeFiles/Clipper2.dir/build.make Clipper2Build/CMakeFiles/Clipper2.dir/build
 .PHONY : Clipper2/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/clipper/01_union.o: src/clipper/01_union.cpp.o
+.PHONY : src/clipper/01_union.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GeometryBasic.dir/build.make CMakeFiles/GeometryBasic.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/clipper/01_union.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GeometryBasic.dir/build.make CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o
+.PHONY : src/clipper/01_union.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/clipper/01_union.i: src/clipper/01_union.cpp.i
+.PHONY : src/clipper/01_union.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GeometryBasic.dir/build.make CMakeFiles/GeometryBasic.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/clipper/01_union.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GeometryBasic.dir/build.make CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.i
+.PHONY : src/clipper/01_union.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/clipper/01_union.s: src/clipper/01_union.cpp.s
+.PHONY : src/clipper/01_union.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GeometryBasic.dir/build.make CMakeFiles/GeometryBasic.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/clipper/01_union.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GeometryBasic.dir/build.make CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.s
+.PHONY : src/clipper/01_union.cpp.s
 
 # Help Target
 help:
@@ -225,9 +225,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Clipper2"
 	@echo "... GeometryBasic"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/clipper/01_union.o"
+	@echo "... src/clipper/01_union.i"
+	@echo "... src/clipper/01_union.s"
 .PHONY : help
 
 

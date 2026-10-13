@@ -72,28 +72,28 @@ include CMakeFiles/GeometryBasic.dir/flags.make
 CMakeFiles/GeometryBasic.dir/codegen:
 .PHONY : CMakeFiles/GeometryBasic.dir/codegen
 
-CMakeFiles/GeometryBasic.dir/src/main.cpp.o: CMakeFiles/GeometryBasic.dir/flags.make
-CMakeFiles/GeometryBasic.dir/src/main.cpp.o: /Users/ttlycared/code/Geometry/GeometryBasic/src/main.cpp
-CMakeFiles/GeometryBasic.dir/src/main.cpp.o: CMakeFiles/GeometryBasic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ttlycared/code/Geometry/GeometryBasic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GeometryBasic.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GeometryBasic.dir/src/main.cpp.o -MF CMakeFiles/GeometryBasic.dir/src/main.cpp.o.d -o CMakeFiles/GeometryBasic.dir/src/main.cpp.o -c /Users/ttlycared/code/Geometry/GeometryBasic/src/main.cpp
+CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o: CMakeFiles/GeometryBasic.dir/flags.make
+CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o: /Users/ttlycared/code/Geometry/GeometryBasic/src/clipper/01_union.cpp
+CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o: CMakeFiles/GeometryBasic.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ttlycared/code/Geometry/GeometryBasic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o -MF CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o.d -o CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o -c /Users/ttlycared/code/Geometry/GeometryBasic/src/clipper/01_union.cpp
 
-CMakeFiles/GeometryBasic.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GeometryBasic.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ttlycared/code/Geometry/GeometryBasic/src/main.cpp > CMakeFiles/GeometryBasic.dir/src/main.cpp.i
+CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ttlycared/code/Geometry/GeometryBasic/src/clipper/01_union.cpp > CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.i
 
-CMakeFiles/GeometryBasic.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GeometryBasic.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ttlycared/code/Geometry/GeometryBasic/src/main.cpp -o CMakeFiles/GeometryBasic.dir/src/main.cpp.s
+CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ttlycared/code/Geometry/GeometryBasic/src/clipper/01_union.cpp -o CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.s
 
 # Object files for target GeometryBasic
 GeometryBasic_OBJECTS = \
-"CMakeFiles/GeometryBasic.dir/src/main.cpp.o"
+"CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o"
 
 # External object files for target GeometryBasic
 GeometryBasic_EXTERNAL_OBJECTS =
 
-GeometryBasic: CMakeFiles/GeometryBasic.dir/src/main.cpp.o
+GeometryBasic: CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o
 GeometryBasic: CMakeFiles/GeometryBasic.dir/build.make
 GeometryBasic: Clipper2Build/libClipper2.a
 GeometryBasic: CMakeFiles/GeometryBasic.dir/link.txt

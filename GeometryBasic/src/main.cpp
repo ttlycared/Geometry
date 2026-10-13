@@ -1,75 +1,47 @@
 
 #include <iostream>
-#include <string>
 #include "clipper2/clipper.h"
 
 using namespace Clipper2Lib;
 
-// 打印多边形集合
-void PrintPaths(const std::string &name, const Paths64 &paths)
-{
-    std::cout << "\n========== " << name << " ==========\n";
-
-    std::cout << "Number of polygons: "
-              << paths.size() << '\n';
-
-    for (size_t i = 0; i < paths.size(); ++i)
-    {
-        std::cout << "Polygon " << i << ":\n";
-
-        for (const auto &p : paths[i])
-        {
-            std::cout << "(" << p.x << ", "
-                      << p.y << ")\n";
-        }
-
-        std::cout << "Area: "
-                  << Area(paths[i]) << '\n';
-    }
-}
-
 int main()
 {
-    // 矩形 A：范围 [0,100] x [0,100]
-    Path64 rect1 = {
+    // 创建一个 100 x 100 的正方形
+    Path64 rect = {
         {0, 0},
         {100, 0},
         {100, 100},
         {0, 100}};
 
-    // 矩形 B：范围 [50,150] x [50,150]
-    Path64 rect2 = {
-        {50, 50},
-        {150, 50},
-        {150, 150},
-        {50, 150}};
+    // 1. 计算面积
+    double area = Area(rect);
+    std::cout << "Area: " << area << '\n';
 
-    Paths64 subjects = {rect1};
-    Paths64 clips = {rect2};
+    // 2. 计算周长
+    // double perimeter = Perimeter(rect);
+    // std::cout << "Perimeter: " << perimeter << '\n';
 
-    // 1. 并集
-    Paths64 union_result =
-        Union(subjects, clips, FillRule::NonZero);
+    // 3. 计算包围盒
+    Rect64 bounds = GetBounds(rect);
 
-    PrintPaths("Union", union_result);
+    std::cout << "Bounds:\n";
+    std::cout << "left   = " << bounds.left << '\n';
+    std::cout << "top    = " << bounds.top << '\n';
+    std::cout << "right  = " << bounds.right << '\n';
+    std::cout << "bottom = " << bounds.bottom << '\n';
 
-    // 2. 交集
-    Paths64 intersect_result =
-        Intersect(subjects, clips, FillRule::NonZero);
+    // 4. 判断点与多边形的关系
+    Point64 p1(50, 50);
+    Point64 p2(150, 50);
+    Point64 p3(0, 50);
 
-    PrintPaths("Intersect", intersect_result);
+    auto r1 = PointInPolygon(p1, rect);
+    auto r2 = PointInPolygon(p2, rect);
+    auto r3 = PointInPolygon(p3, rect);
 
-    // 3. 差集：A - B
-    Paths64 difference_result =
-        Difference(subjects, clips, FillRule::NonZero);
-
-    PrintPaths("Difference A - B", difference_result);
-
-    // 4. 异或：只保留不重叠的区域
-    Paths64 xor_result =
-        Xor(subjects, clips, FillRule::NonZero);
-
-    PrintPaths("Xor", xor_result);
+    std::cout << "Point (50,50): " << static_cast<int>(r1) << '\n';
+    std::cout << "Point (150,50): " << static_cast<int>(r2) << '\n';
+    std::cout << "Point (0,50): " << static_cast<int>(r3) << '\n';
 
     return 0;
 }

@@ -16,9 +16,14 @@ add_subdirectory(
 "${CMAKE_CURRENT_BINARY_DIR}/Clipper2Build"
 )
 
+
+# 选择需要运行的示例
+set(EXAMPLE "01_union" CACHE STRING "Example to build")
+
 add_executable(
     GeometryBasic
-    src/main.cpp
+    src/clipper/${EXAMPLE}.cpp
 )
+
 
 target_link_libraries(GeometryBasic PRIVATE Clipper2)

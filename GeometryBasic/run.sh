@@ -1,3 +1,9 @@
 #!/bin/zsh
 
-cmake --build build && ./build/GeometryBasic
+EXAMPLE=${1:-01_union}
+
+cmake -S . -B build \
+    -DEXAMPLE=${EXAMPLE}
+
+cmake --build build &&
+./build/GeometryBasic

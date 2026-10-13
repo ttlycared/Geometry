@@ -311,6 +311,9 @@ Clipper2_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 Clipper2_SOURCE_DIR:STATIC=/Users/ttlycared/code/Geometry/Clipper2/CPP
 
+//Example to build
+EXAMPLE:STRING=01_union
+
 //Value Computed by CMake
 GeometryBasic_BINARY_DIR:STATIC=/Users/ttlycared/code/Geometry/GeometryBasic/build
 

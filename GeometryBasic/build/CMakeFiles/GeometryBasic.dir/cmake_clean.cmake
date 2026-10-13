@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GeometryBasic.dir/src/main.cpp.o"
-  "CMakeFiles/GeometryBasic.dir/src/main.cpp.o.d"
+  "CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o"
+  "CMakeFiles/GeometryBasic.dir/src/clipper/01_union.cpp.o.d"
   "GeometryBasic"
   "GeometryBasic.pdb"
 )
